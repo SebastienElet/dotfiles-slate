@@ -1,0 +1,4 @@
+dotfiles-slate
+==============
+
+Slate configuration
