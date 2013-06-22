@@ -5,6 +5,10 @@ config nudgePercentOf screenSize
 # The base value for resize percent calculation
 config resizePercentOf screenSize
 
+config windowHintsShowIcons true
+config windowHintsIgnoreHiddenWindows false
+config windowHintsSpread true
+
 # Monitor alias
 alias mon-laptop    1366x768
 alias mon-dell      1980x1200
@@ -22,6 +26,8 @@ alias topleft corner top-left resize:screenSizeX/2;screenSizeY/2
 alias topright corner top-right resize:screenSizeX/2;screenSizeY/2
 alias bottomleft corner bottom-left resize:screenSizeX/2;screenSizeY/2
 alias bottomright corner bottom-right resize:screenSizeX/2;screenSizeY/2
+alias showHintsLeftHand hint AOEUIYQJKX
+alias showNormalHint hint AOEUIDHTNSYXFBPKGMCW
 
 # Bindings
 bind return:shift;cmd ${full}
@@ -34,8 +40,14 @@ bind b:shift;cmd ${bottomleft}
 bind y:shift;cmd ${topleft}
 bind l:shift;cmd ${righthalf}
 bind l:shift;alt;cmd ${rightthird}
-bind .:shift;cmd ${bottomright}
+bind =:shift;cmd ${bottomright}
 bind p:shift;cmd ${topright}
+
+bind e:shift;cmd throw next
+bind e:cmd ${showHintsLeftHand}
+
+# Use the Slate task switcher (beta)
+bind tab:cmd switch
 
 # Focus binding
 bind h:cmd    focus left
