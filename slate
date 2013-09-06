@@ -46,9 +46,6 @@ bind p:shift;cmd ${topright}
 bind e:shift;cmd throw next
 bind e:cmd ${showHintsLeftHand}
 
-# Use the Slate task switcher (beta)
-bind tab:cmd switch
-
 # Focus binding
 bind h:cmd    focus left
 bind j:cmd    focus down
