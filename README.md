@@ -7,5 +7,5 @@ Slate configuration
 
 `````bash
 cd && git clone http://github.com/Nasga/dotfiles-slate.git .dotfiles-slate &&\
-  ln -s .dotfiles-slate/slate .slate
+  ln -s .dotfiles-slate/slate.js .slate.js
 `````
